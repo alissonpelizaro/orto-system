@@ -15,8 +15,7 @@ class Login_model extends CI_Model {
 
     $user = $this->db->get()->result();
 
-    if($user) return $return[0];
-
+    if($user) return $user[0];
     return false;
 	}
 
